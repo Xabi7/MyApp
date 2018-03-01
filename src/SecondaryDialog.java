@@ -1,3 +1,7 @@
+
+import static java.awt.SystemColor.text;
+import javax.swing.JFrame;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -13,9 +17,14 @@ public class SecondaryDialog extends javax.swing.JDialog {
     /**
      * Creates new form SecondaryDialog
      */
-    public SecondaryDialog(java.awt.Frame parent, boolean modal) {
+    public SecondaryDialog(java.awt.Frame parent, boolean modal, String text) {
         super(parent, modal);
         initComponents();
+        this.jLabel1.setText(text + "Clicked!");
+    }
+
+    private SecondaryDialog(JFrame jFrame, boolean b) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     /**
